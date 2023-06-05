@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BUGCAT CAPOO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" / >
+    <script src="https://kit.fontawesome.com/4ba30495a9.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="script.js"></script>	
+  </head>
+  <body>
+    <header>
+      <a href=""><img id="logo" src="logo/Bcapoo.png" height="90"></a>
+      <nav>
+        <ul>
+          <li><a href="#new">最新消息</a></li>
+          <li><a href="#role">角色介紹</a></li>
+          <li><a href="#product">產品</a>
+            <ul class="twoul">
+              <li><a href="#product">絨毛系列</a></li>
+              <li><a href="#product">糖膠玩具</a></li>
+              <li><a href="#product">LINE貼圖</a></li>
+              <li><a href="#product">服飾</a></li>
+              <li><a href="#other">其他</a></li>
+            </ul>
+          </li>
+          <li><a href="#store">實體店鋪</a></li>
+        </ul>
+        
+        <button class="settings-button">標題欄顯示/隱藏</button>
+        <div class="user-button" ng-app="myApp" ng-controller="myCtrl">
+          {{ name }}
+        </div>
+      </nav>
+      
+    </header>
+    
+    <div class="grid-container">
+      
+      <aside class="right">
+        <h1 style="text-align: center"><br><br><br>公告<br><br><h2 style="text-align: center">社交媒體<br><br> 
+          <a href="https://www.youtube.com/channel/UClr57MMpeX6m_p6hvvhu1Fw"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+          <a href="https://www.facebook.com/capoocat/?locale=zh_TW"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="https://www.instagram.com/bugcat_capoo/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href="https://twitter.com/bugcat_capoo_tw?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+          <a href="https://www.tiktok.com/@bugcat_capoo_official"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+          <br><br> <br> 
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcapoocat%2F&tabs=timeline&width=400&height=1000&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>      </aside>
+      
+      <main style="margin: 10px;">
+        <section class="left" style="border: none;background-color: none;margin: 5px;" >
+          <div class="slideshow">
+            <div class="slide">
+              <img src="photo/slideshow (1).jpg">
+            </div>
+            <div class="slide">
+              <img src="photo/slideshow (2).jpg">
+            </div>
+            <div class="slide">
+              <img src="photo/slideshow (3).jpg">
+            </div>
+            <div class="slide">
+              <img src="photo/slideshow (4).jpg">
+            </div>
+            <div class="slide">
+              <img src="photo/slideshow (5).jpg">
+            </div>
+          </div>
+        </section>
+        <section id="new" class="left">
+          <dt>
+            <h2 class="title"">最新消息</h2>
+          </dt>
+          <dd>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230505" target="_self">2023.05.05 咖波九週年生日微醺派對活動總覽暨新品上市</a> <span style="color:#ff3333;"><strong>new</strong></span></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230323a" target="_self">2023.03.23 2023台中國際動漫節-貓貓蟲咖波</a></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230323b" target="_self">2023.03.23 凹豆好日子巡迴展一台中 四月凹豆一番抽</a></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230317" target="_self">2023.03.17 第二屆卡特島市集 03/18 (六)、03/19 (日)</a></span></p>
+            <p style="line-height: 1;"> <span><a href="https://www.carterislandtw.com/pages/news20230313b" target="_self">2023.03.13 咖波瑕疵特賣會03.17(五)一03.19(日)</a></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230313a" target="_self">2023.03.13 凹豆好日子巡迴展一台中 第二波活動03.17開跑</a></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230209" target="_self">2023.02.09 貓貓蟲咖波凹豆好日子巡迴展一台中</a></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230118" target="_self">2023.01.18 限量招財咖波存錢筒-金屬紅 新光三越販售規則</a></span></p>
+            <p style="line-height: 1;"><span><a href="https://www.carterislandtw.com/pages/news20230105" target="_self">2023.01.05 卡特島創意新春活動新品聯合公告</a></span></p>
+          </dd>
+        </section>
+        <section id="role" class="left">
+          <dt>
+            <h2 class="title"">主角介紹</h2>
+          </dt>
+          <dd>
+            <p>BUGCAT CAPOO，又名貓貓蟲咖波，是台灣漫畫家亞拉創造的漫畫角色。它是一隻藍色的小怪物，看起來像貓又像蟲（豸），平時擁有6隻腳，數量會視情況變化。它暴力獵奇又萌萌可愛，最愛吃肉，還有咬手手。原先是作者在巴哈姆特電玩資訊站個人小屋連載的自創角色，後於2015年LINE Webtoon漫畫比賽得到短篇冠軍，而在LINE Webtoon進行連載。2020年3月已於Webtoon完結，現在在粉絲專頁與YouTube網站繼續短篇漫畫與動畫連載。</p>
+            <p>【座右銘】沒有什麼事是一口解決不了的，如果有，那就兩口。</p>
+            <img style="width: 90%;" src="photo/photo1.jpg" alt="">
+          </dd>
+      </section>
+        <section class="left">
+          <dt><h2 class="title"">其他角色</h2></dt>
+          <dd>
+            <table>
+              <tr>
+                  <td>狗狗</td>
+                  <td><img style="width: 150px;" src="role/dog.png" alt=""></td>
+                  <td>咪卡</td>
+                  <td><img style="width: 150px;" src="role/mi.png" alt=""></td>
+              </tr>
+              <tr>
+                  <td>兔兔</td>
+                  <td><img style="width: 150px;" src="role/rabbit.png" alt=""></td>
+                  <td>咖波魚</td>
+                  <td><img style="width: 150px;" src="role/fish.png" alt=""></td>
+              </tr>
+              <tr>
+                  <td>奶泡貓</td>
+                  <td><img style="width: 150px;" src="role/milk.png" alt=""></td>
+                  <td>暴龍姐</td>
+                  <td><img style="width: 150px;" src="role/dia.png" alt=""></td>
+              </tr>
+              <tr>
+                  <td>黑咖波</td>
+                  <td><img style="width: 150px;" src="role/bcapoo.png" alt=""></td>
+                  <td>小海豹</td>
+                  <td><img style="width: 150px;" src="role/bao.png" alt=""></td>
+              </tr>
+              <tr>
+                  <td>黑咖波寶寶</td>
+                  <td><img style="width: 150px;" src="role/bcapoobaby.png" alt=""></td>
+                  <td>殭屍咖波</td>
+                  <td><img style="width: 150px;" src="role/zum.png" alt=""></td>
+              </tr>
+            </table>
+          </dd>
+        </section>    
+        <section id="product" class="left">
+          <dt>
+            <h2 class="title"">產品</h2>
+          </dt>
+          <dd>
+            <div class="product-container">
+              <div class="product-item">
+                <h2>絨毛娃娃</h2>
+                <div class="image-container">
+                  <img style="width: 70%;" src="product/45cm.jpg" alt="">
+                  <div class="sub-images">
+                    <img style="width: 70%;" src="product/50cm.jpg" alt="">
+                    <img style="width: 70%;"  src="product/tongue.jpg" alt="">
+                  </div>
+                </div>
+                <p>絨毛娃娃不僅是玩具，也是收藏品和禮物的熱門選擇。人們可以收集和展示在家中或辦公室，以展示他們的個人喜好</p>
+                <button class="more-button">查看更多</button>
+              </div>
+              
+              <div class="product-item">
+                <h2>糖膠玩具</h2>
+                <div class="image-container">
+                  <img style="width: 70%;" src="product/toy1.jpg" alt="">
+                </div>
+                <p>一種受歡迎的收藏品和玩具，以其獨特的材料、多樣化的設計和收藏價值而受到廣泛追捧</p>
+                <button class="more-button">查看更多</button>
+              </div>
+              
+              <div class="product-item">
+                <h2>LINE貼圖</h2>
+                <div class="image-container">
+                  <img style="width: 70%;" src="product/stickers.jpg" alt="">
+                </div>
+                <p>使用者可以增添對話的樂趣和表達能力。無論是傳達心情還是與朋友互動</p>
+                <button class="more-button">查看更多</button>
+              </div>
+              
+              <div class="product-item">
+                <h2>服飾</h2>
+                <div class="image-container">
+                  <img style="width: 70%;" src="product/coat.jpg" alt="">
+                </div>
+                <p>聯名衣服通常以動漫作品中的角色、圖案或元素作為設計靈感，吸引了眾多動漫愛好者和時尚追隨者的關注。</p>
+                <button class="more-button">查看更多</button>
+              </div>
+            </div>
+          </dd>
+        </section> 
+        <section id="other" class="left" ">
+          <dt>
+            <h2 class="title"">其他產品</h2>
+          </dt>
+          <dd>
+            <h2>Capoo Pals 螢幕貓蟲咖波</h2>
+            <h3>完全無壓力的桌面寵物，治癒你上班、上學的煩悶，讓可愛又搞怪的咖波，陪伴你使用電腦的每一刻</h3>
+            <img style="width: 90%;" src="photo/pals.gif" alt="">
+          </dd>
+        </section> 
+        <section id="store" class="left">
+          <dt><h2 class="title"">實體店鋪</h2></dt>
+          <dd>
+            <h3> 咖波除了不定期的展覽外還有固定的實體門市能近距離接觸咖波</h3>
+            <div style="display: flex;flex-wrap: wrap;">
+              <div class="block">
+                <h2>咖波屋</h2>
+                <h3>台中市西區模範街8巷23號</h3>
+                <p>貓貓蟲咖波周邊商品禮品店</p>
+                <img style="width: 100%;" src="photo/photo3.jpg" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d773.1360444694446!2d120.66666203008639!3d24.147612711938717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d139804f0b7%3A0x41679c7cd9a4c599!2z5ZKW5rOi5bGL!5e0!3m2!1szh-TW!2stw!4v1681972143845!5m2!1szh-TW!2stw" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="block">
+                <h2>奶泡貓咖啡</h2>
+                <h3>台中市西區民權路229巷11號</h3>
+                <p>超可愛奶泡貓開的咖啡館</p>
+                <img style="width: 100%;" src="photo/photo4.jpg" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.656164848482!2d120.66404088503934!3d24.14871031769222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d2b137d921d%3A0x382779eb35d81dec!2z5aW25rOh6LKT5ZKW5ZWh!5e0!3m2!1szh-TW!2stw!4v1681975577906!5m2!1szh-TW!2stw" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="block">
+                <h2>卡特島選品店</h2>
+                <h3>台中市西區民權路229巷11號</h3>
+                <p>「台灣原創設計概念」選品店</p>
+                <img style="width: 100%;" src="photo/photo5.jpg" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6489813238613!2d120.66612277581933!3d24.14896247335763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d7d6d92ec39%3A0xcdf2a8a6e9c60a98!2z5Y2h54m55bO26YG45ZOB5bqX!5e0!3m2!1szh-TW!2stw!4v1681972309921!5m2!1szh-TW!2stw" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="block">
+                <h2>7-11 松高(咖波)門市</h2>
+                <h3>台北市信義區基隆路一段141號</h3>
+                <p>貓貓蟲咖波首家聯名便利商店</p>
+                <img style="width: 100%;" src="photo/photo6.jpg" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.737347649939!2d121.56376321744386!3d25.042986099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbc1f24d8eb%3A0x1af693f7e5882853!2zNy1FTEVWRU4g5p2-6auY6ZaA5biC!5e0!3m2!1szh-TW!2stw!4v1681972397464!5m2!1szh-TW!2stw" width=100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </dd>
+        </section>
+      </main>
+      <div id="top-button">TOP</div>
+    </div>
+      <footer>
+      <p>Copyright © 昶毅</p>
+      </footer>
+  </body>
+
+</html>

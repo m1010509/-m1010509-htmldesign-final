@@ -1,0 +1,174 @@
+    
+    .settings-button {
+      float: right;
+      margin-top: 5px;
+      margin-right: 10px;
+      padding: 10px 20px;
+      background-color: #00ccff00;
+      color: white;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .user-button {
+      float: right;
+      margin-top: 5px;
+      margin-right: 5px;
+      padding: 10px 20px;
+      background-color: #00ccff00;
+      color: white;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+
+    /*可縮內容*/
+    dd{
+        margin-left: 0px;
+    }
+    dd a{
+        color: #000000;
+        text-decoration: none; /*移除連結底線*/
+        font-size: 18px;
+    }
+    /*可縮標題*/
+    dt{
+        cursor: pointer; /*讓滑鼠變手指*/
+    }
+    /*把H2獨立方法*/
+    .title{
+      background: #e2f9ff;
+    }
+    /*在標題後加入符號*/
+    .title::after {
+      content: "\25BC"; /* 使用 Unicode 字符编码表示向下的三角符号 */
+      position: absolute;
+      right:550px; /* 固定像素值，调整为适合您的需求 */
+    }
+
+    /*回到最頂按鈕*/
+    #top-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: #5ac9e8;
+        color: #fff;
+        text-align: center;
+        border-radius: 30%;
+        font-size: 18px;
+        line-height: 50px;
+      }
+    /*碰到最頂按鈕*/
+    #top-button:hover {
+      background-color: #333;
+    }
+
+    /*幻燈片*/
+    .slideshow {
+      position: relative;
+      aspect-ratio: 9/4; /*讓容器預設比率(2160*960 比率)*/
+      margin-bottom: 8px;
+    }
+    
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .slide img {
+      width: 100%;
+      height: auto;
+      object-fit:  fill ; /*填滿*/
+      border-radius: 10px;
+      border: 1px solid #d7d7d7;
+    }
+    
+    /*左右按鈕設定*/
+    .slideshow .prev,
+    .slideshow .next {
+      position: absolute;
+      top:43%;
+      font-size: 24px;
+      color: white;
+      background-color: #5ac9e8;
+      padding: 10px;
+      cursor: pointer;
+      transition: opacity 0.3s ease; /* 過渡效果：透明度變化 0.3 秒 */
+    }
+    
+    .slideshow .prev {
+      left: 0px; /* 按鈕距離容器左側的位置 0px */
+    }
+    
+    .slideshow .next {
+      right: 0px; /* 按鈕距離容器右側的位置 0px */
+    }
+    
+    .slideshow .prev:hover,
+    .slideshow .next:hover {
+      opacity: 0.5; /* 透明度為 0.5 */
+    }
+
+
+
+    /*產品部分*/
+    /* 產品容器 */
+    .product-container {
+      display: flex;
+      overflow-x: auto; /* 水平方向出現滾動條 */
+    }
+
+    /* 單個產品項目 */
+    .product-item {
+      flex: 0 0 500px; /* 項目不會增長或收縮，固定寬度為 500px */
+      background-color: #ffffff;
+      text-align: center;
+      margin: 5px;
+      border: 1px solid #d7d7d7;
+      border-radius: 10px ;
+    }
+
+    .image-container {
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+      margin: 5px;
+    }
+    /* 其他圖片 */
+    .sub-images {
+      margin-top: 10px;
+      margin: 5px;
+      align-items: center;
+    }
+    /*查看按鈕*/
+    .more-button{
+      margin: 15px;
+      padding: 10px;
+      background-color: rgba(73, 156, 179, 0.579);
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    
+
+    @media (max-width: 1000px) {
+      .title::after {
+        content: "\25BC"; /* 使用 Unicode 表示向下三角 */
+        position: absolute;
+        right: 5%;
+      }
+    }
+
+
